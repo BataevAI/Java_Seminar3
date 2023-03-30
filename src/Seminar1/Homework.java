@@ -1,3 +1,5 @@
+package Seminar1;
+
 public class Homework {
     public static void main(String[] args) {
         System.out.println(isSumBetween10And20(5, 15)); // true
