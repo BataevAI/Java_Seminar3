@@ -8,6 +8,7 @@ import java.util.Objects;
 
 import static java.nio.file.Files.exists;
 
+
 public class Seminar2 {
 
     public static void main(String[] args) {
@@ -63,11 +64,13 @@ public class Seminar2 {
 
             Path filePath = Paths.get("file.txt");
             boolean fileExist = !(exists(filePath));
+            ;
             if (fileExist) {
                 Files.createFile(filePath);
             }
 
             String result = buildStringText(n, text);
+
             Files.write(filePath, result.getBytes());
         } catch (IOException ex) {
             System.out.println("Файл уже был создан, или другая ошибка при создании файла");
