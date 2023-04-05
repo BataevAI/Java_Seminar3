@@ -37,7 +37,8 @@ public class Seminar4 {
 
 
             if (scan.equals(print)) {
-                System.out.println(list);
+                if ((list.size() == 0)) System.out.print("");
+                else System.out.println(list);
 
             } else if (scan.equals(revert)) {
                 try {
@@ -50,6 +51,7 @@ public class Seminar4 {
             } else {
                 list.addFirst(scan);
             }
+
             if (list.size() == 0) {
                 System.out.println("Элементы отсутствуют!");
             }
